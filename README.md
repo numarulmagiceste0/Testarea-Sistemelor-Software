@@ -22,7 +22,7 @@ rezolvitor_cuadratic/
 │   └── teste.png                        # Rezultatul rulării testelor
 ├── coverage-report/                     # Raport HTML generat de Coverlet
 └── rezolvitor_cuadratic.sln
-
+```
 
 ## Funcționalitate
 
