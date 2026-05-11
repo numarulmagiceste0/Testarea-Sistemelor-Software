@@ -3,7 +3,7 @@
 Proiect realizat în C# (.NET 9) care rezolvă ecuații de gradul I și II cu coeficienți reali, returnând soluții reale sau complexe formatate ca șiruri de caractere.
 
 ## Structura proiectului
-
+```bash
 rezolvitor_cuadratic/
 ├── cod/
 │   ├── cod_rezolvitor.csproj
