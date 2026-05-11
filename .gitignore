@@ -1,0 +1,18 @@
+# Fișiere compilate
+bin/
+obj/
+
+# Rezultate teste
+**/TestResults/
+
+# Stryker output
+**/StrykerOutput/
+
+# Fișiere Visual Studio
+*.user
+.vs/
+*.suo
+
+# Coverage temporar
+**/.msCoverageSourceRootsMapping*
+**/CoverletSourceRootsMapping*
