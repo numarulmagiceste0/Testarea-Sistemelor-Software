@@ -1,0 +1,236 @@
+GHID_EXECUTIE_PROIECT.txt
+============================================================
+PIPELINE EXECUTIE SI PREZENTARE PROIECT
+============================================================
+REPOSITORY:
+https://github.com/numarulmagiceste0/Testarea-Sistemelor-Software
+
+============================================================
+0. PRECONDITII
+============================================================
+DEPENDENTE NECESARE:
+- Git
+- Visual Studio Code
+- .NET SDK
+
+VALIDARE MEDIU:
+git --version
+dotnet --version
+
+CONDITIE:
+Comenzile trebuie sa returneze versiuni valide.
+
+============================================================
+1. INITIALIZARE DIRECTOR DE LUCRU
+============================================================
+SELECTARE DIRECTOR:
+cd Desktop
+
+sau:
+cd "C:\Users\<utilizator>\Desktop"
+
+optional:
+mkdir proiecte
+cd proiecte
+
+============================================================
+2. CLONARE REPOSITORY
+============================================================
+EXECUTIE:
+git clone https://github.com/numarulmagiceste0/Testarea-Sistemelor-Software.git
+
+EFECT:
+Creare director local:
+Testarea-Sistemelor-Software
+
+============================================================
+3. ACCESARE PROIECT
+============================================================
+EXECUTIE:
+cd Testarea-Sistemelor-Software
+
+============================================================
+4. DESCHIDERE WORKSPACE VS CODE
+============================================================
+EXECUTIE:
+code .
+
+EFECT:
+Deschidere workspace curent in Visual Studio Code.
+
+============================================================
+5. RESTAURARE DEPENDENTE
+============================================================
+EXECUTIE:
+dotnet restore
+
+EFECT:
+- descarcare dependente NuGet
+- restaurare pachete proiect
+- sincronizare configuratie build
+
+POSTCONDITIE:
+Restore finalizat fara erori.
+
+============================================================
+6. BUILD SOLUTIE
+============================================================
+EXECUTIE:
+dotnet build
+
+EFECT:
+- compilare fisiere sursa
+- generare assembly-uri
+- validare sintactica si semantica
+
+POSTCONDITIE:
+Build succeeded.
+
+DIRECTOARE GENERATE:
+- bin/
+- obj/
+
+============================================================
+7. EXECUTIE TESTE UNITARE
+============================================================
+EXECUTIE:
+dotnet test
+
+EFECT:
+- detectare proiecte de test
+- compilare teste
+- executie framework xUnit
+- raportare rezultate
+
+POSTCONDITIE:
+Failed: 0
+
+OUTPUT ASTEPTAT:
+Total tests: X
+Passed: X
+Failed: 0
+
+============================================================
+8. EXECUTIE APLICATIE
+============================================================
+EXECUTIE:
+dotnet run
+
+PRECONDITIE:
+Proiect executabil configurat.
+
+============================================================
+9. STRUCTURA LOGICA PROIECT
+============================================================
+.sln
+Descriptor solutie
+
+.csproj
+Configurare proiect:
+- target framework
+- dependente
+- configuratii build
+
+*.cs
+Implementare cod sursa
+
+teste/
+Implementare suite de teste
+
+README.md
+Documentatie proiect
+
+============================================================
+10. PIPELINE PREZENTARE EXAMEN
+============================================================
+PAS 1:
+Prezentare repository GitHub
+
+PAS 2:
+Clonare proiect
+
+PAS 3:
+Deschidere proiect in VS Code
+
+PAS 4:
+Executie:
+dotnet restore
+
+PAS 5:
+Executie:
+dotnet build
+
+PAS 6:
+Executie:
+dotnet test
+
+PAS 7:
+Analiza rezultate:
+- teste unitare
+- clase de echivalenta
+- boundary testing
+- mutation testing
+
+============================================================
+11. FALLBACK FARA GIT
+============================================================
+ALTERNATIVA:
+GitHub -> Code -> Download ZIP
+
+OPERATII:
+- dezarhivare
+- File -> Open Folder
+- deschidere proiect
+
+EXECUTIE ULTERIOARA:
+dotnet restore
+dotnet build
+dotnet test
+
+============================================================
+12. COMENZI ESENTIALE
+============================================================
+VERIFICARE GIT:
+git --version
+
+VERIFICARE .NET:
+dotnet --version
+
+CLONARE:
+git clone <repository>
+
+ACCESARE DIRECTOR:
+cd <director>
+
+DESCHIDERE VS CODE:
+code .
+
+RESTORE:
+dotnet restore
+
+BUILD:
+dotnet build
+
+TESTE:
+dotnet test
+
+RULARE:
+dotnet run
+
+============================================================
+13. OBSERVATII
+============================================================
+- bin/ si obj/ sunt regenerate automat.
+- repository-ul trebuie sa contina:
+  - sursele
+  - fisierele de proiect
+  - testele
+  - README.md
+
+CRITERIU CRITIC:
+- build valid
+- toate testele trec
+
+============================================================
+END
+============================================================
