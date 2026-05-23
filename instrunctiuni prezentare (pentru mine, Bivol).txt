@@ -217,6 +217,16 @@ dotnet test
 RULARE:
 dotnet run
 
+dotnet tool install -g dotnet-stryker
+cd teste
+dotnet stryker
+
+cd ..
+dotnet test --collect:"XPlat Code Coverage"
+
+dotnet tool install -g dotnet-reportgenerator-globaltool
+reportgenerator -reports:"teste/TestResults/**/coverage.cobertura.xml" -targetdir:"coverage-report"
+
 ============================================================
 13. OBSERVATII
 ============================================================
